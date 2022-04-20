@@ -1,7 +1,8 @@
+import os.path
 import socket
-import sys
 
-from Crypto.aleatorios import generate_random_string
+BUFFER = 4096
+file_size = os.path.getsize('test')
 
 if __name__ == '__main__':
 
@@ -16,19 +17,18 @@ if __name__ == '__main__':
 
     try:
 
-        # Send data
-        message = bytes(generate_random_string(64), 'ascii')
+        # Send file info to allow server to know what to expect
+        message = f'test {file_size}'.encode()
         print(f'sending {message}')
-        sock.sendall(message)
+        sock.send(message)
 
-        # Look for the response
-        received = 0
-        amount_expected = len(message)
-
-        while amount_received < amount_expected:
-            data = sock.recv(64)
-            amount_received += len(data)
-            print(f'received {data}')
+        with open('test', 'rb') as f:
+            while True:
+                read_bytes = f.read(BUFFER)
+                if not read_bytes:
+                    # Break when finish reading
+                    break
+                sock.sendall(read_bytes)
     except Exception:
         pass
     finally:

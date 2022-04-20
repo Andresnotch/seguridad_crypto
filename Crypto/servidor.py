@@ -1,10 +1,12 @@
 import socket
-import sys
+
+BUFFER = 4096
+
 if __name__ == '__main__':
     # Create socket
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-    # Binnd socket
+    # Bind socket
     address = 'localhost'
     port = 10000
     print(f'starting up on {address} port {port}')
@@ -19,15 +21,20 @@ if __name__ == '__main__':
         connection, client_address = sock.accept()
         try:
             print(f'connection from client {client_address[0]} at port {client_address[1]}')
+            # receive file info from client
+            fname, fsize = connection.recv(BUFFER).decode().split(' ')
+            fsize = int(fsize)
 
-            # Receive the data in small chunks and retransmit it
-            while True:
-                data = connection.recv(64)
-                if data:
-                    print(f'received {data}')
-                else:
-                    print(f'no data from client {client_address[0]} at port {client_address[1]}')
-                    break
+            # Receive the data in small chunks
+            with open(f'{fname}_received', 'wb') as f:
+                while True:
+                    read_bytes = connection.recv(BUFFER)
+                    if not read_bytes:
+                        print(f'no data from client {client_address[0]} at port {client_address[1]}')
+                        break
+                    else:
+                        print(f'received {read_bytes}')
+                        f.write(read_bytes)
         except Exception:
             break
         finally:
