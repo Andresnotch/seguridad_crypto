@@ -16,7 +16,6 @@ if __name__ == '__main__':
     sock.connect((address, port))
 
     try:
-
         # Send file info to allow server to know what to expect
         message = f'test {file_size}'.encode()
         print(f'sending {message}')
