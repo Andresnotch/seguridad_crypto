@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e758e0e-bc56-4c50-b5a9-cae1eae23f15" name="Changes" comment="TCP file">
+    <list default="true" id="9e758e0e-bc56-4c50-b5a9-cae1eae23f15" name="Changes" comment="Extended test file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Crypto/cliente.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crypto/cliente.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crypto/test" beforeDir="false" afterPath="$PROJECT_DIR$/Crypto/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crypto/servidor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crypto/servidor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +92,8 @@
       <updated>1650341335544</updated>
       <workItem from="1650341337582" duration="2181000" />
       <workItem from="1650424914902" duration="1481000" />
-      <workItem from="1650511002125" duration="1453000" />
+      <workItem from="1650511002125" duration="2144000" />
+      <workItem from="1650942733346" duration="1310000" />
     </task>
     <task id="LOCAL-00001" summary="TCP">
       <created>1650341552654</created>
@@ -108,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650426379414</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Extended test file">
+      <created>1650512530771</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1650512530771</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,10 +136,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="TCP" />
     <MESSAGE value="TCP file" />
-    <option name="LAST_COMMIT_MESSAGE" value="TCP file" />
+    <MESSAGE value="Extended test file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Extended test file" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Semestre8py$servidor.coverage" NAME="servidor Coverage Results" MODIFIED="1650512276930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crypto" />
-    <SUITE FILE_PATH="coverage/Semestre8py$cliente.coverage" NAME="cliente Coverage Results" MODIFIED="1650512281001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crypto" />
+    <SUITE FILE_PATH="coverage/Semestre8py$servidor.coverage" NAME="servidor Coverage Results" MODIFIED="1650944027335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crypto" />
+    <SUITE FILE_PATH="coverage/Semestre8py$cliente.coverage" NAME="cliente Coverage Results" MODIFIED="1650944033590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crypto" />
   </component>
 </project>

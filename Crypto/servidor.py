@@ -1,6 +1,10 @@
 import socket
+import nacl.utils
+from nacl.public import PrivateKey, Box, PublicKey
 
 BUFFER = 4096
+skserver = PrivateKey.generate()
+pkserver = skserver.public_key
 
 if __name__ == '__main__':
     # Create socket
@@ -21,7 +25,13 @@ if __name__ == '__main__':
         connection, client_address = sock.accept()
         try:
             print(f'connection from client {client_address[0]} at port {client_address[1]}')
-            # receive file info from client
+            # Send public key
+            connection.send(pkserver.encode())
+            # Receive public key from client
+            client_key = connection.recv(BUFFER)
+            # Create server box
+            server_box = Box(skserver, PublicKey(client_key))
+            # receive file info from client (encrypted)
             fname, fsize = connection.recv(BUFFER).decode().split(' ')
             fsize = int(fsize)
 
@@ -35,6 +45,10 @@ if __name__ == '__main__':
                     else:
                         print(f'received {read_bytes}')
                         f.write(read_bytes)
+            # Decrypt file
+            with open(f'{fname}_received', 'rb') as f:
+                contents = f.read()
+                print(server_box.decrypt(contents).decode('utf-8'))
         except Exception:
             break
         finally:
