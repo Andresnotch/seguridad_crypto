@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e758e0e-bc56-4c50-b5a9-cae1eae23f15" name="Changes" comment="Extended test file">
+    <list default="true" id="9e758e0e-bc56-4c50-b5a9-cae1eae23f15" name="Changes" comment="Encryption of file and send&#10;(profe deme un premio, hice el código en 15 minutos y jaló a la primera)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Crypto/cliente.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crypto/cliente.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crypto/servidor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crypto/servidor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +92,7 @@
       <workItem from="1650341337582" duration="2181000" />
       <workItem from="1650424914902" duration="1481000" />
       <workItem from="1650511002125" duration="2144000" />
-      <workItem from="1650942733346" duration="1310000" />
+      <workItem from="1650942733346" duration="2340000" />
     </task>
     <task id="LOCAL-00001" summary="TCP">
       <created>1650341552654</created>
@@ -116,7 +115,21 @@
       <option name="project" value="LOCAL" />
       <updated>1650512530771</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Encryption of file and send">
+      <created>1650944119710</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650944119710</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Encryption of file and send&#10;(profe deme un premio, hice el código en 15 minutos y jaló a la primera)">
+      <created>1650944242386</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1650944242386</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +150,9 @@
     <MESSAGE value="TCP" />
     <MESSAGE value="TCP file" />
     <MESSAGE value="Extended test file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Extended test file" />
+    <MESSAGE value="Encryption of file and send" />
+    <MESSAGE value="Encryption of file and send&#10;(profe deme un premio, hice el código en 15 minutos y jaló a la primera)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Encryption of file and send&#10;(profe deme un premio, hice el código en 15 minutos y jaló a la primera)" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Semestre8py$servidor.coverage" NAME="servidor Coverage Results" MODIFIED="1650944027335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crypto" />

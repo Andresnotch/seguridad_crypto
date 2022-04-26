@@ -33,8 +33,11 @@ if __name__ == '__main__':
         sock.send(message)
 
         with open('test', 'rb') as f:
+            # Read whole file
             contents = f.read()
+            # Encrypt whole file
             encrypted = client_box.encrypt(contents)
+            # Treat bytes as file (for ease of use)
             with io.BytesIO(encrypted) as b:
                 while True:
                     read_bytes = b.read(BUFFER)
