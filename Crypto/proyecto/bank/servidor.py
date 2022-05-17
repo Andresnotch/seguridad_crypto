@@ -84,7 +84,7 @@ class BankServer:
 				try:
 					returnmessage = self.parse_command(decrypted_command)
 				except Exception as e:
-					returnmessage = e
+					returnmessage = str(e)
 				connection.send(f'{len(returnmessage.encode())}'.encode())
 				connection.sendall(returnmessage.encode())
 
