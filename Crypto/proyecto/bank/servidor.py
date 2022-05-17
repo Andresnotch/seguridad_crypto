@@ -103,9 +103,9 @@ class BankServer:
 		if c_split[0] == 'new':
 			return self.new_client(*c_split[1:])
 		if c_split[0] == 'deposit':
-			return self.deposit(c_split[1], int(c_split[2]))
+			return self.deposit(float(c_split[1]))
 		if c_split[0] == 'transfer':
-			return self.transfer_money(c_split[1], int(c_split[2]))
+			return self.transfer_money(c_split[1], float(c_split[2]))
 		return 'Invalid command'
 
 	def start_server(self):
@@ -180,13 +180,11 @@ class BankServer:
 		database.save_db()
 		return 'Money transferred'
 
-	def deposit(self, destination: str, amount: float):
+	def deposit(self, amount: float):
 		if not self.logged_in:
 			raise PermissionError('You are not logged in')
-		if destination not in database.inner['clients']:
-			raise KeyError('The client does not exist')
 		if amount <= 0:
 			raise ValueError('You cannot deposit this amount')
-		database.inner['clients'][destination]['money'] += amount
+		database.inner['clients'][self.current_client['name']]['money'] += amount
 		database.save_db()
 		return 'Deposit made'
