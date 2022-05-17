@@ -1,9 +1,9 @@
 import socket
 import nacl.utils
-from nacl.exceptions import BadSignatureError
 from nacl.signing import VerifyKey
 from nacl.public import PrivateKey, Box, PublicKey
 import nacl.pwhash
+from nacl.exceptions import InvalidkeyError
 import db
 import datetime as dt
 
@@ -118,7 +118,10 @@ class BankServer:
 		if clientname not in database.inner['clients']:
 			raise KeyError('There is no such client')
 		orig_hash = database.inner['clients'][clientname]['password_hash']
-		correct = nacl.pwhash.verify(orig_hash.encode(), password.encode())
+		try:
+			correct = nacl.pwhash.verify(orig_hash.encode(), password.encode())
+		except InvalidkeyError as e:
+			correct = False
 		database.inner['logs'][str(dt.datetime.now().timestamp())] = {
 			'client': clientname,
 			'success': correct
