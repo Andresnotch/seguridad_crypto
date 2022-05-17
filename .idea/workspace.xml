@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e758e0e-bc56-4c50-b5a9-cae1eae23f15" name="Changes" comment="Added some comments">
+    <list default="true" id="9e758e0e-bc56-4c50-b5a9-cae1eae23f15" name="Changes" comment="Sign file with PyNaCl">
+      <change afterPath="$PROJECT_DIR$/Crypto/proyecto/bank/db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crypto/proyecto/bank/servidor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crypto/proyecto/bank/shell.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crypto/proyecto/client/cliente.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crypto/proyecto/client/shell.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crypto/cliente.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crypto/cliente.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crypto/servidor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crypto/servidor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crypto/test" beforeDir="false" afterPath="$PROJECT_DIR$/Crypto/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crypto/cliente.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crypto/servidor.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +51,13 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Python.cliente">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Carlos Hidalgo\Documents\ADN_Docs\Uni\8vo_semestre\Redes 3\Crypto\Semestre8py\Crypto\proyecto\bank" />
+      <recent name="C:\Users\Carlos Hidalgo\Documents\ADN_Docs\Uni\8vo_semestre\Redes 3\Crypto\Semestre8py\Crypto\proyecto\client" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.shell (1)">
     <configuration name="cliente" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Semestre8py" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -61,7 +71,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Crypto/cliente.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Carlos Hidalgo\Documents\ADN_Docs\Uni\8vo_semestre\Redes 3\Crypto\Semestre8py\Crypto\proyecto\client\cliente.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -83,7 +93,51 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Crypto/servidor.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Carlos Hidalgo\Documents\ADN_Docs\Uni\8vo_semestre\Redes 3\Crypto\Semestre8py\Crypto\proyecto\bank\servidor.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="shell (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Semestre8py" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Crypto/proyecto/client" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Crypto/proyecto/client/shell.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="shell" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Semestre8py" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Crypto/proyecto/bank" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Crypto/proyecto/bank/shell.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -114,34 +168,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tjwoe" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Semestre8py" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tjwoe.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.shell" />
+        <item itemvalue="Python.shell (1)" />
         <item itemvalue="Python.cliente" />
         <item itemvalue="Python.servidor" />
         <item itemvalue="Python.testing" />
-        <item itemvalue="Python.tjwoe" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +193,12 @@
       <workItem from="1651191040675" duration="1563000" />
       <workItem from="1651285200579" duration="73000" />
       <workItem from="1651951131501" duration="7358000" />
-      <workItem from="1651962052071" duration="1168000" />
+      <workItem from="1651962052071" duration="2707000" />
+      <workItem from="1652145295050" duration="3006000" />
+      <workItem from="1652286469297" duration="25000" />
+      <workItem from="1652675012932" duration="4619000" />
+      <workItem from="1652712185735" duration="7889000" />
+      <workItem from="1652747675533" duration="10602000" />
     </task>
     <task id="LOCAL-00001" summary="TCP">
       <created>1650341552654</created>
@@ -204,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650945828353</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Sign file with PyNaCl">
+      <created>1651963410542</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1651963410542</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,23 +273,26 @@
     <MESSAGE value="Encryption of file and send" />
     <MESSAGE value="Encryption of file and send&#10;(profe deme un premio, hice el código en 15 minutos y jaló a la primera)" />
     <MESSAGE value="Added some comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added some comments" />
+    <MESSAGE value="Sign file with PyNaCl" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sign file with PyNaCl" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Crypto/servidor.py</url>
-          <line>63</line>
-          <option name="timeStamp" value="5" />
+          <url>file://$PROJECT_DIR$/Crypto/proyecto/bank/servidor.py</url>
+          <line>105</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Semestre8py$servidor.coverage" NAME="servidor Coverage Results" MODIFIED="1651962586736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crypto" />
+    <SUITE FILE_PATH="coverage/Semestre8py$servidor.coverage" NAME="servidor Coverage Results" MODIFIED="1652151616709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crypto" />
+    <SUITE FILE_PATH="coverage/Semestre8py$shell__1_.coverage" NAME="shell (1) Coverage Results" MODIFIED="1652759162410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crypto/proyecto/client" />
     <SUITE FILE_PATH="coverage/Semestre8py$testing.coverage" NAME="testing Coverage Results" MODIFIED="1651952101694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crypto" />
-    <SUITE FILE_PATH="coverage/Semestre8py$cliente.coverage" NAME="cliente Coverage Results" MODIFIED="1651962591365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crypto" />
+    <SUITE FILE_PATH="coverage/Semestre8py$cliente.coverage" NAME="cliente Coverage Results" MODIFIED="1652151621474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crypto" />
     <SUITE FILE_PATH="coverage/Semestre8py$tjwoe.coverage" NAME="tjwoe Coverage Results" MODIFIED="1651192500008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Semestre8py$shell.coverage" NAME="shell Coverage Results" MODIFIED="1652759159097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crypto/proyecto/bank" />
   </component>
 </project>
