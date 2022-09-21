@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e758e0e-bc56-4c50-b5a9-cae1eae23f15" name="Changes" comment="Servidor&#10;- Crear clientes&#10;&#10;Clientes&#10;- Registrarse&#10;- Iniciar sesion&#10;- Mandar dinero&#10;- Depositar dinero&#10;- Cerrar sesion">
+    <list default="true" id="9e758e0e-bc56-4c50-b5a9-cae1eae23f15" name="Changes" comment="HOTFIX:&#10;Wrong casting in transfer and deposit operations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crypto/proyecto/bank/servidor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crypto/proyecto/bank/servidor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +42,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -51,7 +50,7 @@
       <recent name="C:\Users\Carlos Hidalgo\Documents\ADN_Docs\Uni\8vo_semestre\Redes 3\Crypto\Semestre8py\Crypto\proyecto\client" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.shell (1)">
+  <component name="RunManager" selected="Python.leet">
     <configuration name="cliente" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Semestre8py" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -66,6 +65,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="C:\Users\Carlos Hidalgo\Documents\ADN_Docs\Uni\8vo_semestre\Redes 3\Crypto\Semestre8py\Crypto\proyecto\client\cliente.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="leet" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Semestre8py" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/leet.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -140,35 +161,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="testing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Semestre8py" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Crypto" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Crypto/testing.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.leet" />
         <item itemvalue="Python.shell (1)" />
         <item itemvalue="Python.shell" />
         <item itemvalue="Python.cliente" />
         <item itemvalue="Python.servidor" />
-        <item itemvalue="Python.testing" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +192,11 @@
       <workItem from="1652675012932" duration="4619000" />
       <workItem from="1652712185735" duration="7889000" />
       <workItem from="1652747675533" duration="10952000" />
-      <workItem from="1652800089908" duration="281000" />
+      <workItem from="1652800089908" duration="2369000" />
+      <workItem from="1655494678601" duration="5000" />
+      <workItem from="1655495751409" duration="4344000" />
+      <workItem from="1660379686618" duration="227000" />
+      <workItem from="1660379991429" duration="13000" />
     </task>
     <task id="LOCAL-00001" summary="TCP">
       <created>1650341552654</created>
@@ -251,7 +254,28 @@
       <option name="project" value="LOCAL" />
       <updated>1652759798212</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="HOTFIX:&#10;Convert server command error to str">
+      <created>1652800434995</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1652800434995</updated>
+    </task>
+    <task id="LOCAL-00010" summary="HOTFIX:&#10;Wrong login now does not exit prematurely and logs failed attempt">
+      <created>1652801171107</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1652801171107</updated>
+    </task>
+    <task id="LOCAL-00011" summary="HOTFIX:&#10;Wrong casting in transfer and deposit operations">
+      <created>1652801293585</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1652801293585</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,25 +301,18 @@
     <MESSAGE value="Added some comments" />
     <MESSAGE value="Sign file with PyNaCl" />
     <MESSAGE value="Servidor&#10;- Crear clientes&#10;&#10;Clientes&#10;- Registrarse&#10;- Iniciar sesion&#10;- Mandar dinero&#10;- Depositar dinero&#10;- Cerrar sesion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Servidor&#10;- Crear clientes&#10;&#10;Clientes&#10;- Registrarse&#10;- Iniciar sesion&#10;- Mandar dinero&#10;- Depositar dinero&#10;- Cerrar sesion" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Crypto/proyecto/bank/servidor.py</url>
-          <line>87</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="HOTFIX:&#10;Convert server command error to str" />
+    <MESSAGE value="HOTFIX:&#10;Wrong login now does not exit prematurely and logs failed attempt" />
+    <MESSAGE value="HOTFIX:&#10;Wrong casting in transfer and deposit operations" />
+    <option name="LAST_COMMIT_MESSAGE" value="HOTFIX:&#10;Wrong casting in transfer and deposit operations" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Semestre8py$servidor.coverage" NAME="servidor Coverage Results" MODIFIED="1652151616709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crypto" />
-    <SUITE FILE_PATH="coverage/Semestre8py$shell__1_.coverage" NAME="shell (1) Coverage Results" MODIFIED="1652800257261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crypto/proyecto/client" />
+    <SUITE FILE_PATH="coverage/Semestre8py$shell__1_.coverage" NAME="shell (1) Coverage Results" MODIFIED="1652801770676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crypto/proyecto/client" />
+    <SUITE FILE_PATH="coverage/Semestre8py$leet.coverage" NAME="leet Coverage Results" MODIFIED="1655498889448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Semestre8py$testing.coverage" NAME="testing Coverage Results" MODIFIED="1651952101694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crypto" />
     <SUITE FILE_PATH="coverage/Semestre8py$cliente.coverage" NAME="cliente Coverage Results" MODIFIED="1652151621474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crypto" />
     <SUITE FILE_PATH="coverage/Semestre8py$tjwoe.coverage" NAME="tjwoe Coverage Results" MODIFIED="1651192500008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Semestre8py$shell.coverage" NAME="shell Coverage Results" MODIFIED="1652800242415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crypto/proyecto/bank" />
+    <SUITE FILE_PATH="coverage/Semestre8py$shell.coverage" NAME="shell Coverage Results" MODIFIED="1652801662816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crypto/proyecto/bank" />
   </component>
 </project>
